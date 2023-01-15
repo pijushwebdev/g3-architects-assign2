@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&family=Work+Sans&display=swap');
+
+:root {
+    --work-sans-font: 'Work Sans', sans-serif;
+    --yellow-color: #FF900E;
+    --white-color: #FFFFFF;
+    --dark1-color: #131313;
+    --dark2-color: #424242;
+    --dark3-color: #727272;
+    --bg-color: rgba(255, 144, 14, 0.1);
+    --bg2-color: #1E1E1E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--work-sans-font);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark3-color);
+}
+
+section {
+    margin-top: 2rem;
+}
+
+.primary-btn{
+    padding: 20px 25px;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--yellow-color);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border: 2px solid transparent;
+}
+.content{
+    padding: 20px 0;
+}
