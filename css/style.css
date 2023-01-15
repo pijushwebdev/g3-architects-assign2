@@ -51,10 +51,10 @@ header {
 }
 
 .humburger .line {
-    width: 30px;
-    height: 5px;
+    width: 25px;
+    height: 3px;
     background-color: var(--yellow-color);
-    margin: 5px 0;
+    margin: 4px 0;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -66,9 +66,10 @@ header {
 
 /* header style end */
 
-/* hero-section start */
+/* brand-section start */
 #brand-section {
     text-align: center;
+    background-color: var(--bg-color);
 }
 
 .brand-title {
@@ -83,19 +84,20 @@ header {
     width: 100%;
     margin-top: 30px;
 }
-/* hero-section end */
+/* brand-section end */
 /* quick-features-images style start */
-.quick-features-images{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-}
 .features-content{
     display: flex;
     padding: 20px;
     align-items: center;
     gap: 70px;
 }
+.quick-features-images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
 .quick-features-images img{
     /* max-width: 340px; */
     width: 100%;
@@ -263,6 +265,10 @@ footer{
     text-align: center;
     margin-bottom: 30px;
 }
+footer .container{
+    background-color: var(--bg-color);
+    padding: 20px 0;
+}
 footer p{
     color: var(--dark2-color);
 }
@@ -284,7 +290,7 @@ footer p{
         left: 0;
         right: 0;
         bottom: 100%;
-        background-color: #1ddb82aa;
+        background-color: var(--bg-color);
         width: auto;
         height: auto;
         justify-content: space-around;
@@ -297,13 +303,15 @@ footer p{
         -o-transition: all 0.5s;
     }
     .menu a {
-        color: var(--white);
         font-size: 1.4rem;
         width: 100%;
         text-align: center;
+        font-weight: 900;
+        color: var(--yellow-color);
     }
     .humburger {
         display: block;
+        cursor: pointer;
     }
     #nav-toggler:checked~.menu {
         bottom: 0;
@@ -315,6 +323,7 @@ footer p{
     }
     .quick-features-images{
         grid-template-columns: 1fr;
+        /* order: 2; I think this will be better */ 
     }
     /* experience section small device */
     #experiences .content{
