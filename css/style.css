@@ -323,7 +323,7 @@ footer p{
     }
     .quick-features-images{
         grid-template-columns: 1fr;
-        /* order: 2; I think this will be better */ 
+        /* order: 2; I think this will be better. this is for picture last */ 
     }
     /* experience section small device */
     #experiences .content{
