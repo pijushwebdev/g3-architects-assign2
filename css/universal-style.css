@@ -25,6 +25,14 @@
 
 a {
     text-decoration: none;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+}
+a:hover{
+    font-weight: 700;
 }
 p{
     font-size: 16px;
@@ -48,6 +56,16 @@ section {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     border: 2px solid transparent;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.primary-btn:hover{
+    color: var(--yellow-color);
+    background-color: var(--white-color);
+    border-color: var(--yellow-color);
 }
 .content{
     padding: 20px 0;
